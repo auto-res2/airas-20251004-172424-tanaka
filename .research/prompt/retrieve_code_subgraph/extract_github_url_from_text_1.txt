@@ -1,0 +1,17 @@
+
+Input:
+# Task
+You carefully read the contents of the “Paper Outline” and select one GitHub link from the “GitHub URLs List” that you think is most relevant to the contents.
+# Constraints
+- Output the index number corresponding to the selected GitHub URL.
+- Be sure to select only one GitHub URL.
+- If there is no related GitHub link, output None.
+# Paper Outline
+The core methodology involves an LLM-driven objective discovery pipeline, a form of meta-optimization, to uncover novel learning algorithms. An LLM (GPT-4) is iteratively prompted to propose and implement new preference optimization loss functions in Python code. The process begins with 'burning-in' the LLM with established objective functions and their performance. Each proposed function undergoes unit tests for validity. Valid functions are used to fine-tune an LLM, and its performance on a predefined downstream validation task (MT-Bench score) is evaluated and fed back to the LLM as in-context examples. This iterative refinement allows the LLM to synthesize new candidate loss functions by exploring variations of successful formulas and entirely new formulations. The loss functions operate on the log ratio difference (ρ) between chosen and rejected completions from the policy and reference models.
+
+# GitHub URLs List
+['https://github.com/luchris429/DiscoPOP', 'https://github.com/tatsu-lab/alpaca_eval', 'https://github.com/tatsu-lab/alpaca_eval', 'https://github.com/vanderschaarlab/DiscoPOP', 'https://github.com/lm-sys/FastChat', 'https://github.com/tatsu-lab/alpaca_eval']
+Output:
+{
+    "index": 0
+}
